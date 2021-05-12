@@ -1,0 +1,6 @@
+Hello, this is the user guide for my submitted project.
+On the home page, there is a very simple basic implementation of the flashlight plugin. Clicking the button will toggle your device's flashlight on/off (if on mobile)
+Page 2 is where the majority of the work went. I implemented a trivia quiz API from opentdb.com. Simply click the button to select and submit an answer, and the webpage will inform you if you were correct or not. Refreshing the page allows you to get a new question.
+I implemented databinding on html elements on the page, and used angular storage to keep track of total answers, and the amount correct/incorrect.
+Pages 3/4 are unfortunately empty, bar navigation to other pages. Greatly underestimated the trouble implementing the API would give.
+Thanks for reading!

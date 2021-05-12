@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {Flashlight} from "@ionic-native/flashlight/ngx";
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
-
+  constructor(private flashlight: Flashlight) {}
+  //basic implementation of flashlight plugin
+Flashlight()
+{
+  this.flashlight.toggle();
+  
+}
 }

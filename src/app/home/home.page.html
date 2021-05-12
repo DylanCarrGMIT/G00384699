@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Flashlight
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,8 +13,16 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
+  <ul>
+    <li [routerLink]="['/home']">Flashlight</li>
+    <li [routerLink]="['/page2']">Trivia API</li>
+    <li [routerLink]="['/page3']">Page 3</li>
+    <li [routerLink]="['/page4']">Page 4</li>
+
+  </ul>
+  <h2>Plugins!</h2>
+  <h3>Flashlight</h3>
+  <ion-button (click)="Flashlight()">Flashlight</ion-button>
+  
 </ion-content>

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Trivia!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ul>
+    <li [routerLink]="['/home']">Flashlight</li>
+    <li [routerLink]="['/page2']">Trivia API</li>
+    <li [routerLink]="['/page3']">Page 3</li>
+    <li [routerLink]="['/page4']">Page 4</li>
+
+  </ul>
+  <h2>Randomly selected question from OpenTDB.com</h2>
+  <h3>Category: {{Category}}</h3>
+  <h3>Question: {{Question}} </h3>
+  <button (click)="SubmitAnswer(possibleAnswers[0])">{{possibleAnswers[0]}}</button><br>
+  <button (click)="SubmitAnswer(possibleAnswers[1])"> {{possibleAnswers[1]}}</button><br>
+  <button [disabled]="disableButtons" (click)="SubmitAnswer(possibleAnswers[2])">{{possibleAnswers[2]}}</button><br>
+  <button [disabled]="disableButtons" (click)="SubmitAnswer(possibleAnswers[3])">{{possibleAnswers[3]}}</button>
+  <h2 [hidden]="hideResults" color="Yellow">{{message}}</h2>
+  <h3>Total Answers: {{totalAnswers}}</h3>
+  <h3>Total Correct: {{totalCorrect}}</h3>
+  <h3>Total Incorrect: {{totalIncorrect}}</h3>
+</ion-content>
